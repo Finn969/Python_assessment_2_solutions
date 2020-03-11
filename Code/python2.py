@@ -277,11 +277,12 @@ def nine(string1, string2):
 # Think about nesting for loops.
 
 def ten(X, Y):
-	outlist = []
-	for j in range(Y):  # Columns
-		ylist = []
-		for i in range(X):  # Rows nested within columns
-			ylist.append(i * j)
-		outlist.append(ylist)
-	return outlist
+	return[[i*j for i in range(X)]for j in range(Y)]
+# 	outlist = []
+# 	for j in range(Y):  # Columns
+# 		ylist = []
+# 		for i in range(X):  # Rows nested within columns
+# 			ylist.append(i * j)
+# 		outlist.append(ylist)
+# 	return outlist
 
